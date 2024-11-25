@@ -34,7 +34,7 @@ if (WierszeA == WierszeB) and (KolumnyA == KolumnyB):
         for kc in range(KolumnyB):
             MacierzC[wc,kc] = MacierzA[wc,kc] + MacierzB[wc,kc]
     tm.sleep(3)
-    print(   MacierzC)
+    print(MacierzC)
 else:   
     print('Dodawanie macierzy jest niemozliwe')
 # tworzymy macierz c bedącą suumą macierzy
