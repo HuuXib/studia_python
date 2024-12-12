@@ -26,7 +26,7 @@ if kolumnyA == wierszeB:
     for wc in range(wierszeA):
         for kc in range(kolumnyB):
             for i in range(kolumnyA):
-                MacierzC[wc,kc] = MacierzA[wc,i] * MacierzB[i,kc]
+                MacierzC[wc,kc] = MacierzA[wc,i] * MacierzB[i,kc] 
     print(MacierzC)
 else:
     print('Mnożenie macierzy jest niemozliwe')

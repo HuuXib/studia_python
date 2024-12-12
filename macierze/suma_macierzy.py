@@ -17,24 +17,22 @@ print(MacierzA)
 tm.sleep(5)
 #MACIERZ B
 print('DEFINIUJEMY MACIERZ B')
+
 WierszeB= int(input('Podaj ilosc wierszy w macierzy B: '))
 KolumnyB = int(input('Podaj ilosc kolumn w macierzy B: '))
-
-MacierzB = np.zeros((WierszeB,KolumnyB))
-# robimy petle z macierzą b 
-for wb in range(WierszeB):
-    for kb in range(KolumnyB):
-        print('Index wiersza',wb+1,'Index kolumny',kb+1)
-        MacierzB[wb,kb] = int(input('Podaj wartosc komórki macierzy B: '))
-
-#sprawdzamy czy mozna zsumowac ze sobą obydwie macierze
 if (WierszeA == WierszeB) and (KolumnyA == KolumnyB):
-    MacierzC = np.zeros((WierszeA, KolumnyB))
-    for wc in range (WierszeA):
-        for kc in range(KolumnyB):
-            MacierzC[wc,kc] = MacierzA[wc,kc] + MacierzB[wc,kc]
-    tm.sleep(3)
+    MacierzB = np.zeros((WierszeB,KolumnyB))
+    # robimy petle z macierzą b 
+    for wb in range(WierszeB):
+        for kb in range(KolumnyB):
+            print('Index wiersza',wb+1,'Index kolumny',kb+1)
+            MacierzB[wb,kb] = int(input('Podaj wartosc komórki macierzy B: '))
+
+    #sprawdzamy czy mozna zsumowac ze sobą obydwie macierze
+        MacierzC = np.zeros((WierszeA, KolumnyB))
+        for wc in range (WierszeA):
+            for kc in range(KolumnyB):
+                MacierzC[wc,kc] = MacierzA[wc,kc] + MacierzB[wc,kc]
     print(MacierzC)
 else:   
     print('Dodawanie macierzy jest niemozliwe')
-# tworzymy macierz c bedącą suumą macierzy
