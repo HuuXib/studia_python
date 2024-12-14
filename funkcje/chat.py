@@ -1,29 +1,30 @@
-import numpy as np
 import matplotlib.pyplot as plt
-import math as mth
+import numpy as np
 
-def cos(x, N):
-    y = 0
-    for n in range(N):
-        y += (x **(2*n)*(-1)**n)/mth.factorial(2 * n)
-    return y
+# Dane do wykresów
+x = np.linspace(0, 10, 100)
+y1 = np.sin(x)
+y2 = np.cos(x)
 
-N = 7
-x = np.linspace(-10, 10, 200)
-y = np.zeros(len(x))
+# Tworzenie wykresów w dwóch osobnych osiach
+fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(6, 8))
 
-for i in range(len(x)):
-    y[i] = cos(x[i], N)
+# Wykres na górze
+ax1.plot(x, y1, label='sin(x)', color='b')
+ax1.set_title('Wykres sin(x)')
+ax1.set_xlabel('x')
+ax1.set_ylabel('sin(x)')
+ax1.legend()
 
-plt.figure()
-plt.plot(x, np.cos(x), 'r', label = 'cos(x)')
-plt.plot(x, y, 'b-', label='Przybliżenie')
-plt.ylim([-2, 2])
+# Wykres na dole
+ax2.plot(x, y2, label='cos(x)', color='r')
+ax2.set_title('Wykres cos(x)')
+ax2.set_xlabel('x')
+ax2.set_ylabel('cos(x)')
+ax2.legend()
 
-plt.title('Przybliżenie cos(x)')
-plt.xlabel('x')
-plt.ylabel('y')
-plt.legend(loc ='upper right')
-plt.grid(True)
+# Dopasowanie układu wykresów
+plt.tight_layout()
 
+# Wyświetlanie wykresów
 plt.show()
