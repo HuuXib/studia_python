@@ -5,6 +5,7 @@ import json
 
 
 
+# Napisz funkcję wielomian_horner, która wyznaczy wartość y za pomocą schematu Hornera dla podanego na wejściu x i współczynników wielomianu (jako wektor).
 
 # Napisz skrypt, który będzie tablicować funkcję wielomian_horner dla wektora x-ów zawierającego wartości z zakresu -10 do 10 (1000 elementów).
 # Wykreśl wyniki tablicowania paru wielomianów w postaci paru wykresów. Przećwicz wszystkie podane na zajęciach funkcje służące do tworzenia, opisywania i modyfikowania wykresów.
@@ -36,14 +37,14 @@ fig, (w1, w2) = plt.subplots(2, 1, sharey=all, sharex = all) # (wiersze x kolumn
 
 #Wykresy
 w1.grid()
-w1.plot(x, y1, "-k", label="Funkcja f(x1)")
+w1.plot(x, y1, "-k", label="5x^3 + x^2 + 3x + 2")
 w1.legend(loc ='upper right')  
 w1.set_xlabel('x')
 w1.set_ylabel('y')
 
 
 w2.grid()
-w2.plot(x, y2, "-r", label="Funkcja f(x2)")
+w2.plot(x, y2, "-r", label="2x^3 + x^2 + 3x + 7")
 w2.legend(loc ='upper right')  
 w2.set_xlabel('x')
 w2.set_ylabel('y')
