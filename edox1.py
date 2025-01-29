@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 #funkcja 
 N = 10
-x = 2
+x = 1
 abs_error = 0.01
 def Taylor_e(x, N):
     an = 1
