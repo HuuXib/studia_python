@@ -9,4 +9,4 @@ for w in range(wiersze):
     for k in range(kolumny):
         # print(matrix[k,w])
         matrixb[k,w] = (matrix[k,wiersze-w-1])
-print(matrixb)
+print(matrixb)  

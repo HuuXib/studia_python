@@ -1,0 +1,24 @@
+🟢 Wersja konsolowa (na start):
+Zaprojektuj funkcje kalkulatora:
+
+dodawanie, odejmowanie, mnożenie, dzielenie
+
+ewentualnie: potęgowanie, pierwiastkowanie, dzielenie modulo
+
+Zdefiniuj funkcje w Pythonie:
+
+def dodaj(a, b): return a + b itd.
+
+Stwórz prosty interfejs tekstowy (input/output):
+
+Wybór operacji przez użytkownika
+
+Pobieranie dwóch liczb
+
+Wyświetlenie wyniku
+
+Dodaj obsługę błędów:
+
+Dzielenie przez zero
+
+Złe dane wejściowe (np. litery zamiast cyfr)
